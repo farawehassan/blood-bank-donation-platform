@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 donorapp/public/
+web: vendor/bin/heroku-php-apache2 public/
