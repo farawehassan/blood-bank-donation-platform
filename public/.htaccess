@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+
+    ErrorDocument 403 /error.php
+    ErrorDocument 404 /error.php
+    ErrorDocument 500 /error.php
+
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    # Disallow Viewing Of Htaccess Files
+    <Files .htaccess>
+        Order Allow,Deny
+        Deny From All
+    </Files>
+</IfModule>
