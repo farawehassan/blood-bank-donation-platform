@@ -222,7 +222,8 @@ function preventFileCaching($file='') : string
 
 function asset($asset=NULL) : string
 {
-    return ".".preventFileCaching($asset);
+    // return ".".preventFileCaching($asset);
+    return preventFileCaching($asset);
 }
 
 function isRequestType(string $requestType) : bool
